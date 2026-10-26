@@ -1,0 +1,6 @@
+{
+  "team": "slopathone_winningteam",
+  "name": "career-survival-v0",
+  "mode": "agent",
+  "instruction": "Use the career-strategy Skill to manage the full 48-month simulation. Base decisions on the public handbook and information returned by the official tools in the current run. Balance sustained career progress with health, dignity, financial resilience, and visible risk warnings. Reassess after actions and performance reviews. Do not use memorised event answers or unpublished formulas."
+}
