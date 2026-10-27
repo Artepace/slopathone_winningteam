@@ -2,7 +2,7 @@
 
 ## Status and task understanding
 
-Team: slopathone_winningteam. This name is taken from the repository name and should be checked against the registered team name before submission.
+Team: Winning team.
 
 This is an initial proposed design, not a tested or scored solution. The agent manages a new employee through a 48-month career. Monthly choices, quarterly resource allocation, and six-month reviews require decisions whose consequences can extend beyond the current event.
 

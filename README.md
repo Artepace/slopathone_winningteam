@@ -8,7 +8,7 @@ Official TechArena starter plus an initial preliminary design.
 - `preliminary/design/skills_design.md`: proposed strategy, responsibilities, risks, and validation plan.
 - `preliminary/skills/career-strategy/SKILL.md`: initial decision instructions.
 
-The preliminary design is untested. Confirm that `slopathone_winningteam` matches your registered team name before submitting it.
+The preliminary design is untested. The registered team name is "Winning team"; keep it identical in every `manifest.json` (preliminary and final).
 
 Submit the filled `preliminary/` package on https://techarena-uk.hydro.ac/ for organiser verification and an API key. Pushing to GitHub does not submit an entry. No presentation video is needed for the preliminary package.
 
