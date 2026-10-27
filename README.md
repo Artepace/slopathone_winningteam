@@ -6,7 +6,7 @@ Official TechArena starter plus an initial preliminary design.
 
 - `preliminary/manifest.json`: team identity and single-agent instructions.
 - `preliminary/design/skills_design.md`: proposed strategy, responsibilities, risks, and validation plan.
-- `preliminary/skills/career-strategy/SKILL.md`: initial decision instructions.
+- `preliminary/skills/`: three Skills: `career-survival-core` (run loop and priorities), `event-choice-evaluation` (monthly events), `quarterly-planning` (Energy and main action).
 
 The preliminary design is untested. The registered team name is "Winning team"; keep it identical in every `manifest.json` (preliminary and final).
 
@@ -20,7 +20,7 @@ https://techarena-career-sim.readthedocs.io/en/latest/quickstart.html
 1. Run `make sync` to install the pinned dependencies, including JiuwenSwarm 0.2.4b3.
 2. After receiving organiser-issued credentials, copy `.env.example` to `.env` and enter the supplied values locally.
 3. Follow the quickstart to configure and start the instance.
-4. Copy `example_submission_structure/` to `solution/`. Transfer the preliminary manifest, design, and career-strategy Skill into the working copy; remove the example skill-name folder.
+4. Copy `example_submission_structure/` to `solution/`. Transfer the preliminary manifest, design, and the three Skills into the working copy; remove the example skill-name folder.
 5. Replace the remaining sample documents before final submission. The example video is empty; supply your own English video for the final ZIP.
 6. Use `make play`, `make score`, and `make replay` to develop and inspect results.
 

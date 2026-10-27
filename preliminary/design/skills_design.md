@@ -1,48 +1,41 @@
-# Preliminary Skills design
+# Skills Design (Preliminary)
 
-## Status and task understanding
+## 1. Our understanding of the task
+The agent is a newly hired engineer in a 48-month workplace simulation. Each month it faces up to three story events and picks one choice per event. At the end of each quarter it receives 3 Energy points (no carry-over) and may pick one quarterly main action. Every six months there is a performance review with a bonus and a promotion window. The agent acts only through five official MCP tools: `new_game`, `observe`, `take_action`, `check_latest_logs` and `show_employee_handbook`.
 
-Team: Winning team.
+The run can end early. The public failure directions are health at zero, critically low dignity, accumulated hidden risk, repeated low performance, network at zero for long, wealth negative for long, and skill falling far behind. The exact thresholds are unpublished. A completed run ends with a quantitative score from 0 to 100, based on career level, total wealth, health and dignity, skill, risk control and network. Official scoring averages three runs and adds document design quality and token efficiency. Surviving all 48 months therefore matters twice: it protects the live-play score and it removes the cap on the token-efficiency term.
 
-This is an initial proposed design, not a tested or scored solution. The agent manages a new employee through a 48-month career. Monthly choices, quarterly resource allocation, and six-month reviews require decisions whose consequences can extend beyond the current event.
+Our central view is that this is a balance-and-timing problem under incomplete information. Maximising one statistic (for example Output through overwork) is likely to end the run early or lower the ending score. We therefore design for steady, balanced growth with early correction of adverse trends.
 
-The implementation uses JiuwenSwarm 0.2.4b3 in single-agent mode. One Skill, career-strategy, provides the decision process. Multiple people may develop the submission, but the evaluated execution uses one agent.
+## 2. Planned Skills and responsibilities
+| Skill | Responsibility |
+|---|---|
+| `career-survival-core` | Owns the whole run: setup (handbook, new game), the observe/decide/act loop, the priority order (avoid early failure, balance, long-term growth, wealth), how to read risk from trends and warnings, horizon awareness, and token economy. |
+| `event-choice-evaluation` | Owns monthly story events: reads the state, estimates each choice's effect on the visible statistics, classifies it as safe, trade-off or gamble, and applies the priority rules. It works from effects, never from event names. |
+| `quarterly-planning` | Owns the quarter-end phase: diagnoses the state, covers urgent needs first, spends the 3 Energy points, and chooses or skips the main action, using only the published action effects and adjusting for the stage of the run. |
 
-## Skill responsibilities
+The Skills are linked as one decision chain. The core Skill sets the priorities and calls the other two at the right phase. Both of those Skills use the same priority order, so their outputs stay consistent.
 
-The career-strategy Skill is responsible for:
-- establishing the current phase, visible statistics, warnings, and legal choices;
-- comparing monthly options using immediate risk and longer-term development;
-- coordinating quarterly Energy spending with the optional main action;
-- checking outcomes and adjusting priorities after reviews;
-- keeping a concise summary and stopping at the reported ending.
+## 3. Information the agent uses
+- The public employee handbook, read once at the start.
+- The statistics returned by `observe`: Health, Dignity, Skill, Network, Level, Output, Wealth, Energy and CurrentLevelDuration.
+- Event text, the listed choices and any warnings.
+- Changes between consecutive observations, used to detect trends.
+- `check_latest_logs`, used only when a warning or unexpected change needs explaining.
+- The agent's own short notes in `take_action`, used to record the reasoning and expected effect.
 
-Keeping these responsibilities in one Skill avoids contradictory priorities and duplicated context in this first version. The same agent combines all evidence into a single decision; there are no teammate agents or parallel roles.
+The Skills do not contain any internal formulas, event lists, event-specific answers or unpublished thresholds. Where we mention a safety margin, we describe it as a cautious working habit, not as a known rule.
 
-## Evidence and decision approach
+## 4. How the decisions are combined
+For every decision, the agent (1) reads the state and finds the weakest or fastest-falling dimension, (2) lists the effects of each option, (3) protects against early failure first, (4) then prefers long-term growth in Skill, Network and sustained Output, and (5) records a short reason. Monthly events and quarterly actions share the same logic, so a recovery chosen in the quarterly phase is not undone by a gamble in a story event.
 
-The agent uses the public handbook and rules, current observations, available event choices, action results, review feedback, and official logs from its current run. The five official MCP tools provide game interaction. No internal package contents, database inspection, hidden evaluation information, or external services are used.
+## 5. Main risks in the approach
+- **Incomplete information.** Thresholds and hidden-risk conditions are unknown. Our mitigation is to act on trends and warnings, and to be conservative when an effect is unclear.
+- **Over-caution.** Too much protection could lower Output, Skill and promotion progress. We mitigate this by switching to growth actions whenever the state is stable.
+- **Vague event effects.** Choices may not state their effects. The agent must infer from wording, and may misjudge. In-run comparison of expected and actual change is the correction.
+- **Dataset overfitting.** The official dataset differs from the development one. We avoid event memorisation and keep the Skills generic.
+- **Token cost.** Long reasoning every turn raises tokens per month. The core Skill asks for short notes, rare log checks and a single handbook read.
+- **Model limits.** The designated model may not follow long instructions perfectly. We keep each Skill focused and structured as ordered steps.
 
-The decision sequence is: understand the situation, identify urgent visible risks, compare legal actions, choose a sustainable response, and inspect its consequences. Serious warnings take priority over speculative progress. In stable conditions the agent develops Skill, Network, and Output while preserving Health, Dignity, and financial resilience. These are qualitative priorities, not assertions about hidden scoring weights or exact thresholds.
-
-Quarterly planning considers a combination of actions within the visible budget. The agent reassesses after each action rather than assuming that the initial plan remains valid. Six-month feedback guides changes in emphasis without being treated as proof of a hidden formula.
-
-## Risks and intended mitigation
-
-Incomplete information can hide accumulating problems. The agent therefore checks warnings and trends and keeps uncertain interpretations separate from observations.
-
-An excessively cautious policy could survive but progress poorly. Reviews and observed development trends should help the agent recognise this and invest more in sustainable progress when immediate risks are controlled.
-
-An excessively aggressive policy could sacrifice wellbeing for short-term output. The Skill explicitly considers recovery and the consequences of repeated tradeoffs.
-
-Tool loops and excessive context can waste tokens. The agent uses returned results first, consults logs when needed, and maintains a concise summary.
-
-Development events may differ from evaluation events. The design contains no event-specific answer mappings, memorised sequences, or unpublished numerical limits. Scripts and reference files are omitted because the initial strategy needs only instructions and official tools.
-
-## Planned validation
-
-After obtaining organiser-issued access, install the pinned dependencies with make sync and test through the official runner. For local play, prepare solution/ using the official final template and transfer this manifest and Skill into it.
-
-Inspect complete run outcomes, early exits, warnings, reviews, invalid action attempts, and token use across repeated runs. Revise instructions using evidence from those runs, documenting actual changes and limitations. No runs, performance gains, or scores are claimed at this stage.
-
-Before preliminary submission, confirm the registered team name and review all English documents. For the final submission, add the required README, decision report, and original English presentation video, then run the official validator.
+## 6. Plan for improvement
+After the API key arrives, we will run local games, read transcripts and score reports, and refine each Skill against what actually fails. We expect to tune the early/middle/late emphasis in quarterly planning and the risk classification in event evaluation. We will decide whether any reference files are warranted. We currently plan no scripts, because the design needs no code execution.

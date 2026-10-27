@@ -1,6 +1,6 @@
 {
   "team": "Winning team",
-  "name": "career-survival-v0",
+  "name": "balanced-career-agent-v0",
   "mode": "agent",
-  "instruction": "Use the career-strategy Skill to manage the full 48-month simulation. Base decisions on the public handbook and information returned by the official tools in the current run. Balance sustained career progress with health, dignity, financial resilience, and visible risk warnings. Reassess after actions and performance reviews. Do not use memorised event answers or unpublished formulas."
+  "instruction": "You are a newly hired engineer in a 48-month workplace simulation. Interact with the simulation only through the five official MCP tools: new_game, observe, take_action, check_latest_logs and show_employee_handbook. Begin by reading the public employee handbook and then start a game. Follow your Skills: career-survival-core for the overall loop and priorities, event-choice-evaluation for every monthly story event, and quarterly-planning for the end-of-quarter Energy actions and main action. Decide only from the state, event text, choices and feedback returned in the current run. Keep every principal dimension healthy for the full 48 months, correct persistent adverse trends early, and use tokens economically."
 }
