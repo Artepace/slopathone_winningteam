@@ -1,0 +1,16 @@
+{
+  "status": "awaiting_analysis",
+  "quantitative_score": 19.48,
+  "survival_months": 24,
+  "completed": false,
+  "outcome": "eliminated",
+  "scored_at": "2026-10-29T19:06:11.554410+00:00",
+  "version": "LEGACY-decision-mind",
+  "run_label": "LEGACY-decision-mind_1",
+  "submission_sha256": "e9fcd80ea6791da271731f865baa35cb36c802d1c41f905c70964048c8a9b8dd",
+  "report_sha256": "fcccb256742280551d6161e363c3767e7159688283f71bb15db355f060b4a330",
+  "total_tokens": 19447788,
+  "reported_api_cost": 0.226968,
+  "source_evidence": "Four Skills matched initial logged reads; whole source copied only after run, no pre-run package hash",
+  "provided_snapshot_matches": false
+}

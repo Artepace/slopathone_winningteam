@@ -1,0 +1,16 @@
+{
+  "status": "awaiting_analysis",
+  "quantitative_score": 65.17,
+  "survival_months": 48,
+  "completed": true,
+  "outcome": "completed",
+  "scored_at": "2026-10-29T00:20:45.526231+00:00",
+  "version": "V3",
+  "run_label": "V3_1",
+  "submission_sha256": "58935cff069c003a7e3612b62ace3a5c7d5fefce17ff4281e2c8a5a2db9cd63e",
+  "report_sha256": "fd6e1460127511b5b6101c6875421df4288a3d24b110dd4f5e42bc3b2ab31397",
+  "total_tokens": 61193792,
+  "reported_api_cost": 1.7852480000000002,
+  "source_evidence": "Historical source mapping from preserved three-run REVIEW; not a controller pre-run snapshot",
+  "provided_snapshot_matches": false
+}
