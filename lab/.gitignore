@@ -1,0 +1,10 @@
+.catalog.lock
+.catalog-stage-*/
+*.tmp
+.env*
+*.sqlite*
+*.log
+*.jsonl
+.venv/
+.experiments/
+.career_sim_runner/

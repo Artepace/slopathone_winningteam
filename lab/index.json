@@ -1,0 +1,49 @@
+{
+  "versions": [
+    {
+      "version": "LEGACY-decision-mind",
+      "submission_sha256": "e9fcd80ea6791da271731f865baa35cb36c802d1c41f905c70964048c8a9b8dd",
+      "total_runs": 1,
+      "valid_runs": 1,
+      "mean_score": 19.48,
+      "worst_score": 19.48,
+      "full_careers": 0
+    },
+    {
+      "version": "V3",
+      "submission_sha256": "58935cff069c003a7e3612b62ace3a5c7d5fefce17ff4281e2c8a5a2db9cd63e",
+      "total_runs": 3,
+      "valid_runs": 3,
+      "mean_score": 47.25333333333333,
+      "worst_score": 26.24,
+      "full_careers": 2
+    },
+    {
+      "version": "V3-risk-r1",
+      "submission_sha256": "c9e9724e9dba34e9b9350e52120979bb7621e211d9126d3a19e3ce238788d90e",
+      "total_runs": 0,
+      "valid_runs": 0,
+      "mean_score": null,
+      "worst_score": null,
+      "full_careers": 0
+    },
+    {
+      "version": "V4",
+      "submission_sha256": "082ac18ee3168fd41ddd6f8b6c24fbaa11cbf017c780fc4547d4840ab0e62557",
+      "total_runs": 0,
+      "valid_runs": 0,
+      "mean_score": null,
+      "worst_score": null,
+      "full_careers": 0
+    },
+    {
+      "version": "V4-initial",
+      "submission_sha256": "75623aea482430135a6c15d5a11a5399280b868a145a4215bf9f5def21efe34c",
+      "total_runs": 0,
+      "valid_runs": 0,
+      "mean_score": null,
+      "worst_score": null,
+      "full_careers": 0
+    }
+  ]
+}
