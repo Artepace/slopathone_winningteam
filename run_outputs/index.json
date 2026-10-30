@@ -1,0 +1,145 @@
+{
+  "created_at": "2026-10-30T20:27:59.428332+00:00",
+  "description": "Original public score reports and event streams from distinct eliminated sessions.",
+  "runs": [
+    {
+      "label": "LEGACY-decision-mind_1",
+      "version": "LEGACY-decision-mind",
+      "score": 19.48,
+      "months": 24,
+      "outcome": "eliminated",
+      "files": [
+        {
+          "name": "score_report.json",
+          "sha256": "fcccb256742280551d6161e363c3767e7159688283f71bb15db355f060b4a330",
+          "bytes": 2446
+        },
+        {
+          "name": "events-20261029T184405Z.jsonl",
+          "sha256": "6e41ede247fc34cbb785dd1c5a69f579e86294b80be52922beb61f577a98ea0a",
+          "bytes": 891412
+        }
+      ]
+    },
+    {
+      "label": "V3_2",
+      "version": "V3",
+      "score": 26.24,
+      "months": 19,
+      "outcome": "eliminated",
+      "files": [
+        {
+          "name": "score_report.json",
+          "sha256": "cce2597fac9999bb685e57226f2f10e0d79feabe7fe11989f9805b2ba0e465e2",
+          "bytes": 2500
+        },
+        {
+          "name": "events-20261028T232100Z.jsonl",
+          "sha256": "888be6f442c6df222c40cfcddcdd49dd9375914f34184b04598e86b0faec4e62",
+          "bytes": 861181
+        }
+      ]
+    },
+    {
+      "label": "V4_1",
+      "version": "V4",
+      "score": 27.6,
+      "months": 36,
+      "outcome": "eliminated",
+      "files": [
+        {
+          "name": "score_report.json",
+          "sha256": "eb42d97b568f6136bf7687c72c0f8ca48e79a93584bc6ab93f8ca7f9f2cf7a6c",
+          "bytes": 2493
+        },
+        {
+          "name": "events-20261029T191627Z.jsonl",
+          "sha256": "d2406c58a4aa0db9bfee0c074a111e3439a612001d70051c92fba3efbfe3972d",
+          "bytes": 1502908
+        }
+      ]
+    },
+    {
+      "label": "V5-adaptive-r1_1",
+      "version": "V5-adaptive-r1",
+      "score": 31.76,
+      "months": 24,
+      "outcome": "eliminated",
+      "files": [
+        {
+          "name": "score_report.json",
+          "sha256": "f5324a937b5eb5d090f35c4252f8d22031f3c57d46af9018a67b2e65fab158b5",
+          "bytes": 2757
+        },
+        {
+          "name": "events-20261030T164737Z.jsonl",
+          "sha256": "08634fad3321f0d8d7a66c936dd966063fb96065dd79e945b5895c3515bf82b1",
+          "bytes": 1331172
+        }
+      ]
+    },
+    {
+      "label": "V5-adaptive-r1_3",
+      "version": "V5-adaptive-r1",
+      "score": 14.32,
+      "months": 24,
+      "outcome": "eliminated",
+      "files": [
+        {
+          "name": "score_report.json",
+          "sha256": "f5c5d516c69fd39009cbbbb54d3c55da538bb8da0036f797dbe8f07dcaa5ec74",
+          "bytes": 2751
+        },
+        {
+          "name": "events-20261030T164737Z.jsonl",
+          "sha256": "b83db4e9fd1f42922f41be5dcf98b2ae30eff93e771a3b42475a87af09f68da1",
+          "bytes": 1033595
+        }
+      ]
+    },
+    {
+      "label": "V5-adaptive-r2_2",
+      "version": "V5-adaptive-r2",
+      "score": 45.88,
+      "months": 45,
+      "outcome": "eliminated",
+      "files": [
+        {
+          "name": "score_report.json",
+          "sha256": "1eef039ccbd154da16b9006ffb584a0ad07de2998d7106ae1e9c0d82e8aed28c",
+          "bytes": 2763
+        },
+        {
+          "name": "events-20261030T174704Z.jsonl",
+          "sha256": "ec7b9ee5b7f2960ed2c6f7118307ae067a94b73c8d434dfe724653f355a596d6",
+          "bytes": 1924620
+        }
+      ]
+    },
+    {
+      "label": "V5-adaptive-r2_3",
+      "version": "V5-adaptive-r2",
+      "score": 21.73,
+      "months": 24,
+      "outcome": "eliminated",
+      "files": [
+        {
+          "name": "score_report.json",
+          "sha256": "3aa3e5d76b2b2c1d2a7e0ee0bafe356da48d0ba316a11cf692ea6ee7ac26d295",
+          "bytes": 2755
+        },
+        {
+          "name": "events-20261030T174704Z.jsonl",
+          "sha256": "10671045d4305cba402f7b300edc79b21587780f4704ff8c2f3a33466169596e",
+          "bytes": 1056875
+        }
+      ]
+    }
+  ],
+  "missing_confirmed_mapping": [
+    "v1 requested label",
+    "v2 requested label",
+    "additional v4 runs 2/3"
+  ],
+  "naming_note": "Catalog labels are preserved. LEGACY and V3_2 are historical runs for identification, not relabelled as v1/v2. V5 r1 and r2 are distinct revisions."
+}
