@@ -1,0 +1,16 @@
+{
+  "status": "awaiting_analysis",
+  "quantitative_score": 45.88,
+  "survival_months": 45,
+  "completed": false,
+  "outcome": "eliminated",
+  "scored_at": "2026-10-30T18:36:49.706016+00:00",
+  "version": "V5-adaptive-r2",
+  "run_label": "V5-adaptive-r2_2",
+  "submission_sha256": "426774af63df5e12f60e674e2625ed8b15363ae2c07f571c3cc2db1b9698d442",
+  "report_sha256": "0c3a99587e18cd83ac9a97c94c441fab43582f7a4ab212763062ff658a9a666b",
+  "total_tokens": 65138976,
+  "reported_api_cost": 1.930767,
+  "source_evidence": "Controller frozen pre-run snapshot; run 20261030T174654Z-dbf1d7",
+  "provided_snapshot_matches": true
+}

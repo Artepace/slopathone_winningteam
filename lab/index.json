@@ -44,6 +44,15 @@
       "mean_score": null,
       "worst_score": null,
       "full_careers": 0
+    },
+    {
+      "version": "V5-adaptive-r2",
+      "submission_sha256": "426774af63df5e12f60e674e2625ed8b15363ae2c07f571c3cc2db1b9698d442",
+      "total_runs": 3,
+      "valid_runs": 3,
+      "mean_score": 43.02333333333333,
+      "worst_score": 21.73,
+      "full_careers": 1
     }
   ]
 }
