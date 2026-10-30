@@ -74,9 +74,33 @@
           "sha256": "97863a076e865e86bc96c13381cf2cd94c74d209e80d3e3731f3ccbbc9c9449f",
           "bytes": 1956,
           "original_bytes": true
+        },
+        {
+          "name": "diagnosis.json",
+          "sha256": "d616200c929fde419c819827cc5432bfe7845a84abf159d7c322da8be720bf21",
+          "bytes": 1074,
+          "reconstructed": true
+        },
+        {
+          "name": "full_replay.md",
+          "sha256": "b59225faad3ef4abc6c93f1203e3512decb5aa21adcfbc981c315283f8de728a",
+          "bytes": 221919,
+          "reconstructed": true
+        },
+        {
+          "name": "score_report.recovered.json",
+          "sha256": "282eded91222b9e6a66c28332fa34cc77538ff7bc5e872a0fdd46d1f299ff1d2",
+          "bytes": 5402,
+          "reconstructed": true
         }
       ],
-      "source_line": 1696
+      "source_line": 1696,
+      "full_recovery_available": true,
+      "transport_error": {
+        "code": 1011,
+        "reason": "keepalive ping timeout",
+        "observed_at": "2026-10-30T22:04:13.848+00:00"
+      }
     }
   ],
   "files": [
@@ -119,6 +143,21 @@
       "path": "verified_game_results.json",
       "sha256": "6c10fd03f46d5f9d75dd6c72b32beef3d9404fa11eb98967b271f952a56b9e41",
       "bytes": 922
+    },
+    {
+      "path": "run_3/diagnosis.json",
+      "sha256": "d616200c929fde419c819827cc5432bfe7845a84abf159d7c322da8be720bf21",
+      "bytes": 1074
+    },
+    {
+      "path": "run_3/full_replay.md",
+      "sha256": "b59225faad3ef4abc6c93f1203e3512decb5aa21adcfbc981c315283f8de728a",
+      "bytes": 221919
+    },
+    {
+      "path": "run_3/score_report.recovered.json",
+      "sha256": "282eded91222b9e6a66c28332fa34cc77538ff7bc5e872a0fdd46d1f299ff1d2",
+      "bytes": 5402
     }
   ]
 }

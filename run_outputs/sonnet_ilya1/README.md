@@ -19,3 +19,13 @@ Run 3 contains the original events JSONL, recovered-ending-score.json and runner
 The [index](index.json) records source identity and file SHA256 values. The three sessions are distinct and their frozen submissions all match the same solution SHA256.
 
 Only the simultaneous batch 20261030T212442Z-55c222 is included.
+
+## Full recovery and diagnosed export error
+
+Run 3 now includes a [reconstructed score report](run_3/score_report.recovered.json), a [full readable replay](run_3/full_replay.md) and [diagnosis](run_3/diagnosis.json).
+
+The terminal game response arrived at 22:03:37 UTC. The preserved service diagnostic then records a WebSocket close with code 1011 and reason keepalive ping timeout at 22:04:13 UTC. The runner exited before the normal score-report export. The underlying reason the keepalive response was missed is unknown.
+
+All 203 successful chosen actions are preserved. The official replay renderer pairs 202 with preceding observations; the additional successful action is included explicitly in the replay appendix. All six final scoring dimensions and the 73.25 score are copied from the game response.
+
+The reconstructed JSON retains runner exit code 1. Final token and cost totals are unknown and use null values. The usage blocks received before the failure are supplied separately under recorded_token_usage. Their subtotal is incomplete.
