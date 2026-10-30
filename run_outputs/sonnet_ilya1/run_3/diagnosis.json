@@ -1,0 +1,20 @@
+{
+  "conclusion": "WebSocket keepalive ping timeout after the terminal game observation, before normal score_report export.",
+  "game_ending_observed_at": "2026-10-30T22:03:37.976546+00:00",
+  "transport_error_at": "2026-10-30T22:04:13.848+00:00",
+  "runner_finished_at": "2026-10-30T22:04:15.117034+00:00",
+  "transport_close_code": 1011,
+  "transport_close_reason": "keepalive ping timeout",
+  "service_diagnostic_line": 6522,
+  "service_diagnostic_sha256": "164612b00f26b68009510e9e4be3b72a593de0706fc5f67352afbcc151b0d061",
+  "runner_process_exit_code": 1,
+  "successful_actions": 203,
+  "paired_replay_actions": 202,
+  "additional_action_in_replay_appendix": 1,
+  "ending_score_complete": true,
+  "token_usage_complete": false,
+  "recorded_usage_total_tokens": 53082259,
+  "last_recorded_usage_at": "2026-10-30T22:03:29.076517+00:00",
+  "cause_of_missing_ping_response": "Not established by preserved evidence.",
+  "shutdown_error_note": "The same asynchronous-generator shutdown message appears in successful workers 1 and 2 and is not evidence of this root cause."
+}

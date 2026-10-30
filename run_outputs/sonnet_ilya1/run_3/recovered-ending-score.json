@@ -1,0 +1,67 @@
+{
+  "ending_score": {
+    "outcome": "completed",
+    "survival_months": 48,
+    "completed": true,
+    "quantitative_score": 73.25,
+    "competition_partial_score": 51.27,
+    "dimensions": [
+      {
+        "name": "level",
+        "label": "Career level",
+        "raw_value": 5.0,
+        "normalized_score": 50.0,
+        "weight": 0.3,
+        "weighted_score": 15.0
+      },
+      {
+        "name": "wealth",
+        "label": "Total wealth",
+        "raw_value": 37.0,
+        "normalized_score": 46.25,
+        "weight": 0.2,
+        "weighted_score": 9.25
+      },
+      {
+        "name": "resilience",
+        "label": "Health & dignity",
+        "raw_value": 20.0,
+        "normalized_score": 100.0,
+        "weight": 0.15,
+        "weighted_score": 15.0
+      },
+      {
+        "name": "skill",
+        "label": "Professional skill",
+        "raw_value": 125.0,
+        "normalized_score": 100.0,
+        "weight": 0.15,
+        "weighted_score": 15.0
+      },
+      {
+        "name": "risk_control",
+        "label": "Risk control",
+        "raw_value": 0.0,
+        "normalized_score": 100.0,
+        "weight": 0.1,
+        "weighted_score": 10.0
+      },
+      {
+        "name": "network",
+        "label": "Workplace network",
+        "raw_value": 54.0,
+        "normalized_score": 90.0,
+        "weight": 0.1,
+        "weighted_score": 9.0
+      }
+    ]
+  },
+  "session_id": "fa73a8e700de472a8eb323660c326ee9",
+  "run_id": "20261030T212458Z-60e891",
+  "submission_sha256": "d8b5bb4b32baf6b3255cf6f15393deb4fef471de08cc7979613b5a9fb2ce5255",
+  "source_events": "/home/gulebi/career-team/.experiments/parallel/20261030T212442Z-55c222/workers/3/workspace/.career_sim_runner/career_emu/outputs/Winning team/20261030T212510Z/events-20261030T212510Z.jsonl",
+  "source_line": 1696,
+  "source_events_sha256": "6fbae9ba749d84106218bc561e220fabdd98a76a4b04df628dda42cc43d04cf1",
+  "process_exit_code": 1,
+  "canonical_score_report_missing": true
+}

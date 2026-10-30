@@ -1,0 +1,11 @@
+{
+  "id": "20261030T212458Z-60e891",
+  "status": "infrastructure_error",
+  "process_exit_code": 1,
+  "error": "Runner ended without a score report",
+  "started_at": "2026-10-30T21:25:08.950072+00:00",
+  "finished_at": "2026-10-30T22:04:15.117034+00:00",
+  "candidate_id": "sonnet-ilya1-5a171f0-d8b5bb4b32ba",
+  "submission_sha256": "d8b5bb4b32baf6b3255cf6f15393deb4fef471de08cc7979613b5a9fb2ce5255",
+  "canonical_score_report_missing": true
+}
