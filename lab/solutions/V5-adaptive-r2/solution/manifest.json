@@ -1,0 +1,6 @@
+{
+  "team": "Winning team",
+  "name": "career-agent-v5-adaptive-r2",
+  "mode": "agent",
+  "instruction": "For an authorized Career Survival game, use session-ledger, threat-control, event-judgment, resource-planning and feedback-learning. Open all five Skills at start and recover their ledger after a reset. Use one session and only the five official game MCP tools. Observe after each action. Current observations determine phase, choices and effects. Carry unresolved warnings and protection history; praise, silence and accepted actions do not establish resolution. Use observed returns at the current level to choose a delivery action after a weak review. Favor a cheaper effective move and preserve earned progress. A flat statistic alone does not establish a cap. Follow threat-control for conflicts, then support evidence-based growth. End only on actual terminal feedback; print the returned ending_score and DONE. This is an untested local candidate; do not launch a game merely by inspecting this package."
+}
