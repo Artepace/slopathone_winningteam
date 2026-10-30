@@ -30,10 +30,10 @@
     {
       "version": "V4",
       "submission_sha256": "082ac18ee3168fd41ddd6f8b6c24fbaa11cbf017c780fc4547d4840ab0e62557",
-      "total_runs": 0,
-      "valid_runs": 0,
-      "mean_score": null,
-      "worst_score": null,
+      "total_runs": 1,
+      "valid_runs": 1,
+      "mean_score": 27.6,
+      "worst_score": 27.6,
       "full_careers": 0
     },
     {
