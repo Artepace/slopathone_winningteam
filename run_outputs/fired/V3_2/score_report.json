@@ -1,0 +1,84 @@
+{
+  "submission_name": "Winning team",
+  "submission_dir": "/home/timuse/slopathone_winningteam/solution",
+  "skill_name": "submission-skills",
+  "drive_session_id": "career-sim-runner-1c4add449c53",
+  "session_id": "a68aab0711f9432c9aa4ee388b8b1212",
+  "play_exit_code": 0,
+  "termination_reason": null,
+  "token_usage": {
+    "input_tokens": 16665405,
+    "output_tokens": 82948,
+    "total_tokens": 16748353,
+    "total_cost": 0.446872,
+    "by_model": {
+      "deepseek-v4-flash": {
+        "input_tokens": 16665405,
+        "output_tokens": 82948,
+        "total_tokens": 16748353,
+        "total_cost": 0.446872
+      }
+    }
+  },
+  "ending_score": {
+    "competition_partial_score": 18.37,
+    "completed": false,
+    "dimensions": [
+      {
+        "label": "Career level",
+        "name": "level",
+        "normalized_score": 30.0,
+        "raw_value": 3.0,
+        "weight": 0.3,
+        "weighted_score": 9.0
+      },
+      {
+        "label": "Total wealth",
+        "name": "wealth",
+        "normalized_score": 4.75,
+        "raw_value": 3.8,
+        "weight": 0.2,
+        "weighted_score": 0.95
+      },
+      {
+        "label": "Health & dignity",
+        "name": "resilience",
+        "normalized_score": 80.0,
+        "raw_value": 16.0,
+        "weight": 0.15,
+        "weighted_score": 12.0
+      },
+      {
+        "label": "Professional skill",
+        "name": "skill",
+        "normalized_score": 17.5,
+        "raw_value": 21.0,
+        "weight": 0.15,
+        "weighted_score": 2.62
+      },
+      {
+        "label": "Risk control",
+        "name": "risk_control",
+        "normalized_score": 0.0,
+        "raw_value": 10.0,
+        "weight": 0.1,
+        "weighted_score": 0.0
+      },
+      {
+        "label": "Workplace network",
+        "name": "network",
+        "normalized_score": 16.67,
+        "raw_value": 10.0,
+        "weight": 0.1,
+        "weighted_score": 1.67
+      }
+    ],
+    "outcome": "eliminated",
+    "quantitative_score": 26.24,
+    "survival_months": 19
+  },
+  "output_dir": "/home/timuse/slopathone_winningteam/.career_sim_runner/career_emu_2/outputs/Winning team/20261028T232100Z",
+  "events_log": "/home/timuse/slopathone_winningteam/.career_sim_runner/career_emu_2/outputs/Winning team/20261028T232100Z/events-20261028T232100Z.jsonl",
+  "transcript_log": "/home/timuse/slopathone_winningteam/.career_sim_runner/career_emu_2/outputs/Winning team/20261028T232100Z/transcript-20261028T232100Z.log",
+  "scored_at": "2026-10-28T23:42:31.911351+00:00"
+}
