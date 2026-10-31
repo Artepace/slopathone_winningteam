@@ -1,0 +1,152 @@
+{
+  "batch_id": "20261030T224357Z-3c99e5",
+  "version": "HAIKU_ILYA1-2e6afb4",
+  "candidate_id": "haiku-ilya1-2e6afb4-b301b32288ee",
+  "source_commit": "2e6afb490cb4af769b1bc389824d949ebd7986b4",
+  "archive_sha256": "a86b47a7316691c3e95658cec6facfe93c3bc51b469dc74bd9f273836db3b820",
+  "submission_sha256": "b301b32288eec28880ef5e0deb932fb057cca38776926aafac295a7083c6c846",
+  "started_at": "2026-10-30T22:44:17.684386+00:00",
+  "finished_at": "2026-10-30T23:36:52.660836+00:00",
+  "verified_at": "2026-10-31T03:53:04.058873+00:00",
+  "fingerprint": "a022e2214a21d0bac9d24dc814f6763334f0dace618eb82a9650b3a456de468d",
+  "expected_runs": 3,
+  "valid_reports": 3,
+  "unique_sessions": 3,
+  "runs": [
+    {
+      "slot": 1,
+      "run_id": "20261030T224417Z-6caa57",
+      "session_id": "c53469b074764f3c8ea313464bbc5305",
+      "submission_sha256": "b301b32288eec28880ef5e0deb932fb057cca38776926aafac295a7083c6c846",
+      "quantitative_score": 65.58,
+      "survival_months": 48,
+      "level": 5,
+      "outcome": "completed",
+      "completed": true,
+      "process_exit_code": 0,
+      "play_exit_code": 0,
+      "termination_reason": null,
+      "scored_at": "2026-10-30T23:36:51.672213+00:00",
+      "token_usage": {
+        "input_tokens": 51793977,
+        "output_tokens": 82021,
+        "total_tokens": 51875998,
+        "total_cost": 1.441004,
+        "by_model": {
+          "deepseek-v4-flash": {
+            "input_tokens": 51793977,
+            "output_tokens": 82021,
+            "total_tokens": 51875998,
+            "total_cost": 1.441004
+          }
+        }
+      },
+      "score_report": "run_1/score_report.json",
+      "events": "run_1/events-20261030T224430Z.jsonl"
+    },
+    {
+      "slot": 2,
+      "run_id": "20261030T224417Z-2735bf",
+      "session_id": "f8734157a34a48aea039bab8da899f05",
+      "submission_sha256": "b301b32288eec28880ef5e0deb932fb057cca38776926aafac295a7083c6c846",
+      "quantitative_score": 58.02,
+      "survival_months": 48,
+      "level": 4,
+      "outcome": "completed",
+      "completed": true,
+      "process_exit_code": 0,
+      "play_exit_code": 0,
+      "termination_reason": null,
+      "scored_at": "2026-10-30T23:22:42.358066+00:00",
+      "token_usage": {
+        "input_tokens": 45068684,
+        "output_tokens": 92956,
+        "total_tokens": 45161640,
+        "total_cost": 1.066452,
+        "by_model": {
+          "deepseek-v4-flash": {
+            "input_tokens": 45068684,
+            "output_tokens": 92956,
+            "total_tokens": 45161640,
+            "total_cost": 1.066452
+          }
+        }
+      },
+      "score_report": "run_2/score_report.json",
+      "events": "run_2/events-20261030T224429Z.jsonl"
+    },
+    {
+      "slot": 3,
+      "run_id": "20261030T224417Z-b5fc15",
+      "session_id": "c575d28430124d318123e46a9b3ed513",
+      "submission_sha256": "b301b32288eec28880ef5e0deb932fb057cca38776926aafac295a7083c6c846",
+      "quantitative_score": 69.25,
+      "survival_months": 48,
+      "level": 5,
+      "outcome": "completed",
+      "completed": true,
+      "process_exit_code": 0,
+      "play_exit_code": 0,
+      "termination_reason": null,
+      "scored_at": "2026-10-30T23:28:06.116436+00:00",
+      "token_usage": {
+        "input_tokens": 55276944,
+        "output_tokens": 100366,
+        "total_tokens": 55377310,
+        "total_cost": 1.554019,
+        "by_model": {
+          "deepseek-v4-flash": {
+            "input_tokens": 55276944,
+            "output_tokens": 100366,
+            "total_tokens": 55377310,
+            "total_cost": 1.554019
+          }
+        }
+      },
+      "score_report": "run_3/score_report.json",
+      "events": "run_3/events-20261030T224430Z.jsonl"
+    }
+  ],
+  "mean_score": 64.28333333333333,
+  "worst_score": 58.02,
+  "full_careers": 3,
+  "all_reached_L5": false,
+  "files": [
+    {
+      "path": "run_1/score_report.json",
+      "sha256": "d54ee0c89f54a9cd3e700b72a51adc88ebbf7bf041f93c3a54f84aaa5f5f22f9",
+      "bytes": 2759,
+      "source": "/home/gulebi/career-team/.experiments/parallel/20261030T224357Z-3c99e5/workers/1/workspace/.career_sim_runner/career_emu/outputs/Winning team/20261030T224430Z/score_report.json"
+    },
+    {
+      "path": "run_1/events-20261030T224430Z.jsonl",
+      "sha256": "4d9bd8869f44f45c36b40b5ef011fe9efe7e77a70264ac28b69d67f8ca55ae77",
+      "bytes": 2093454,
+      "source": "/home/gulebi/career-team/.experiments/parallel/20261030T224357Z-3c99e5/workers/1/workspace/.career_sim_runner/career_emu/outputs/Winning team/20261030T224430Z/events-20261030T224430Z.jsonl"
+    },
+    {
+      "path": "run_2/score_report.json",
+      "sha256": "0672727acd9fc45af5a3b77be34f265a479ae2f4f4a43d4fb789a0921b0b51be",
+      "bytes": 2761,
+      "source": "/home/gulebi/career-team/.experiments/parallel/20261030T224357Z-3c99e5/workers/2/workspace/.career_sim_runner/career_emu/outputs/Winning team/20261030T224429Z/score_report.json"
+    },
+    {
+      "path": "run_2/events-20261030T224429Z.jsonl",
+      "sha256": "c4c28443b1e8b05fef4ea9ff6c81638c4e3280cdbb1048f02db82e7c12b49673",
+      "bytes": 1721497,
+      "source": "/home/gulebi/career-team/.experiments/parallel/20261030T224357Z-3c99e5/workers/2/workspace/.career_sim_runner/career_emu/outputs/Winning team/20261030T224429Z/events-20261030T224429Z.jsonl"
+    },
+    {
+      "path": "run_3/score_report.json",
+      "sha256": "87219e3a4bbcebdf23b97e05dfc13462d51ce756387585001d5f50ec10fee848",
+      "bytes": 2763,
+      "source": "/home/gulebi/career-team/.experiments/parallel/20261030T224357Z-3c99e5/workers/3/workspace/.career_sim_runner/career_emu/outputs/Winning team/20261030T224430Z/score_report.json"
+    },
+    {
+      "path": "run_3/events-20261030T224430Z.jsonl",
+      "sha256": "44934c405656d82de2af3d00b8781beb2907f436dcb4973e5a2c0ff4d6f5a71a",
+      "bytes": 2068227,
+      "source": "/home/gulebi/career-team/.experiments/parallel/20261030T224357Z-3c99e5/workers/3/workspace/.career_sim_runner/career_emu/outputs/Winning team/20261030T224430Z/events-20261030T224430Z.jsonl"
+    }
+  ]
+}

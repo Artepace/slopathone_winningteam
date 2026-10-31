@@ -1,0 +1,84 @@
+{
+  "submission_name": "Winning team",
+  "submission_dir": "/home/gulebi/career-team/.experiments/parallel/20261030T224357Z-3c99e5/workers/1/workspace/.experiments/runs/20261030T224417Z-6caa57/submission",
+  "skill_name": "submission-skills",
+  "drive_session_id": "career-sim-runner-b057792950dc",
+  "session_id": "c53469b074764f3c8ea313464bbc5305",
+  "play_exit_code": 0,
+  "termination_reason": null,
+  "token_usage": {
+    "input_tokens": 51793977,
+    "output_tokens": 82021,
+    "total_tokens": 51875998,
+    "total_cost": 1.441004,
+    "by_model": {
+      "deepseek-v4-flash": {
+        "input_tokens": 51793977,
+        "output_tokens": 82021,
+        "total_tokens": 51875998,
+        "total_cost": 1.441004
+      }
+    }
+  },
+  "ending_score": {
+    "competition_partial_score": 45.9,
+    "completed": true,
+    "dimensions": [
+      {
+        "label": "Career level",
+        "name": "level",
+        "normalized_score": 50.0,
+        "raw_value": 5.0,
+        "weight": 0.3,
+        "weighted_score": 15.0
+      },
+      {
+        "label": "Total wealth",
+        "name": "wealth",
+        "normalized_score": 37.88,
+        "raw_value": 30.3,
+        "weight": 0.2,
+        "weighted_score": 7.58
+      },
+      {
+        "label": "Health & dignity",
+        "name": "resilience",
+        "normalized_score": 100.0,
+        "raw_value": 20.0,
+        "weight": 0.15,
+        "weighted_score": 15.0
+      },
+      {
+        "label": "Professional skill",
+        "name": "skill",
+        "normalized_score": 100.0,
+        "raw_value": 140.0,
+        "weight": 0.15,
+        "weighted_score": 15.0
+      },
+      {
+        "label": "Risk control",
+        "name": "risk_control",
+        "normalized_score": 40.0,
+        "raw_value": 6.0,
+        "weight": 0.1,
+        "weighted_score": 4.0
+      },
+      {
+        "label": "Workplace network",
+        "name": "network",
+        "normalized_score": 90.0,
+        "raw_value": 54.0,
+        "weight": 0.1,
+        "weighted_score": 9.0
+      }
+    ],
+    "outcome": "completed",
+    "quantitative_score": 65.58,
+    "survival_months": 48
+  },
+  "output_dir": "/home/gulebi/career-team/.experiments/parallel/20261030T224357Z-3c99e5/workers/1/workspace/.career_sim_runner/career_emu/outputs/Winning team/20261030T224430Z",
+  "events_log": "/home/gulebi/career-team/.experiments/parallel/20261030T224357Z-3c99e5/workers/1/workspace/.career_sim_runner/career_emu/outputs/Winning team/20261030T224430Z/events-20261030T224430Z.jsonl",
+  "transcript_log": "/home/gulebi/career-team/.experiments/parallel/20261030T224357Z-3c99e5/workers/1/workspace/.career_sim_runner/career_emu/outputs/Winning team/20261030T224430Z/transcript-20261030T224430Z.log",
+  "scored_at": "2026-10-30T23:36:51.672213+00:00"
+}
